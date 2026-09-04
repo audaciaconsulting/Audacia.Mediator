@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <RootNamespace>Audacia.Mediator</RootNamespace>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+        <PackageId>Audacia.Mediator</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Audacia</Authors>
+        <Company>Audacia</Company>
+        <Description>A small in-process mediator for dispatching commands and queries to their handler through a pipeline of behaviours. Depends only on the dependency injection abstractions.</Description>
+        <PackageTags>mediator;cqrs;mediatr;pipeline;dependency-injection</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Audacia.CodeAnalysis" Version="2.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.10" />
+    </ItemGroup>
+
+</Project>
