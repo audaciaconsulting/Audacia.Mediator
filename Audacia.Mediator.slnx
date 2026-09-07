@@ -1,6 +1,11 @@
 <Solution>
+  <Folder Name="/build/">
+    <File Path="build/pipeline.yaml" />
+  </Folder>
   <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
     <File Path="Directory.Build.props" />
+    <File Path="LICENSE.txt" />
     <File Path="README.md" />
   </Folder>
   <Project Path="src/Audacia.Mediator.csproj" />
