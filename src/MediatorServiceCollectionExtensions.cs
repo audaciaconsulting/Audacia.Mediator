@@ -88,6 +88,11 @@ public static class MediatorServiceCollectionExtensions
         ArgumentNullException.ThrowIfNull(services);
         ArgumentNullException.ThrowIfNull(behaviorType);
 
+        if (!behaviorType.IsClass || behaviorType.IsAbstract)
+        {
+            throw new ArgumentException($"'{behaviorType}' must be a non-abstract class.", nameof(behaviorType));
+        }
+
         var behaviorInterfaces = GenericInterfacesOf(behaviorType, typeof(IPipelineBehavior<,>));
 
         if (behaviorInterfaces.Count == 0)

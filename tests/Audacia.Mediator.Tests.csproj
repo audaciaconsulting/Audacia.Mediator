@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\Audacia.Mediator\src\Audacia.Mediator.csproj" />
+		<ProjectReference Include="..\src\Audacia.Mediator.csproj" />
     </ItemGroup>
 
 </Project>
