@@ -2,9 +2,9 @@ name: $(Year:yy)$(DayOfYear).$(Rev:r)
 trigger:
   - main
 pr:
-    branches:
-      include:
-        - main
+  branches:
+    include:
+      - main
 resources:
   repositories:
     - repository: templates
@@ -43,3 +43,4 @@ stages:
       )
     jobs:
       - template: src/deployment/nuget/jobs/public-nuget-package.job.yaml@templates
+  
